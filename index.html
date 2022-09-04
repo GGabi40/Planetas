@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu peso em...</title>
+    <link rel="icon" href="/css Planetas/icon.png" />
+    <link rel="stylesheet" href="./css Planetas/planeta.css" />
+</head>
+<body>
+
+    <div id="youtube">
+        <a href="http://youtube.com/semideiasdenome" target="_blank">
+            <img src="https://images.vexels.com/media/users/3/137425/isolated/lists/f2ea1ded4d037633f687ee389a571086-logotipo-de-icono-de-youtube.png">
+        </a>
+    </div>
+    <div class="Title">
+        <h1>Voce quer saber quanto voce pesa em outros planetas?</h1>
+        <h2>Vamos descobrir!</h2>
+    </div>
+    <div class="explicacao">
+        <p>
+            Primeiramente coloque o seu peso em Kg onde te indique. <br>
+            Toque o botao <strong>"Enviar"</strong> .<br>
+            Para começar de novo, toque o botão <strong>"Resetar"</strong> abaixo.
+        </p>
+    </div>
+    
+    <div class="planet3">
+        <h3 style="display: block; text-align: center; color: white;">TERRA</h3>
+        <span style="display: block; text-align: center; color: white; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;font-size: 16px;">g = 9.8</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Blue_Marble_%28remastered%29.jpg/300px-The_Blue_Marble_%28remastered%29.jpg" style="display: block; margin: auto;" />
+    </div>
+
+    <div class="inputs">
+        <input type="number" id="pesando" class="inputPregunta" placeholder="Qual é o seu peso (kg)?" /> 
+        <button id="botaozinho" onclick="calculos()">Enviar</button>
+    </div>
+    
+    <div class="fourPlanets" style="border: 1px solid aqua;">
+        <div class="planet1">
+            <h3>MERCURIO</h3>
+            <span style="display: block; text-align: center; color: white; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;font-size: 16px;">g = 3.7</span>
+            <img src="./css Planetas/Mercurio.jpg" />
+            <p style="display: block; text-align: center; color: white; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;font-size: 16px;">Seu peso é de: </p>
+            <input type="text" id="1" class="inputPlaneta" />
+        </div>
+
+        <div class="planet2">
+            <h3>VENUS</h3>
+            <span style="display: block; text-align: center; color: white; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;font-size: 16px;">g = 8.87</span>
+            <img src="https://www.geoenciclopedia.com/wp-content/uploads/2014/12/Venus_600.jpg" />
+            <p style="display: block; text-align: center; color: white; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;font-size: 16px;">Seu peso é de: </p>
+            <input type="text" id="2" class="inputPlaneta" />
+        </div>
+
+        <div class="planet4">
+            <h3>MARTE</h3>
+            <span style="display: block; text-align: center; color: white; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;font-size: 16px;">g = 3.72</span>
+            <img src="/css Planetas/Marte.jpg" />
+            <p style="display: block; text-align: center; color: white; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;font-size: 16px;">Seu peso é de: </p>
+            <input type="text" id="3" class="inputPlaneta" />
+        </div>
+
+        <div class="planet5">
+            <h3>JUPITER</h3>
+            <span style="display: block; text-align: center; color: white; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;font-size: 16px;">g = 26.79</span>
+            <img src="/css Planetas/600px-Jupiter.webp" />
+            <p style="display: block; text-align: center; color: white; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;font-size: 16px;">Seu peso é de: </p>
+            <input type="text" id="4" class="inputPlaneta" />
+        </div>
+    </div>
+
+    <div class="otFourPlanets" style="border: 1px solid aqua;">
+        <div class="planet6">
+            <h3>SATURNO</h3>
+            <span style="display: block; text-align: center; color: white; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;font-size: 16px;">g = 10.44</span>
+            <img src="/css Planetas/saturno.png" />
+            <p style="display: block; text-align: center; color: white; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;font-size: 16px;">Seu peso é de: </p>
+            <input type="text" id="5" class="inputPlaneta" />
+        </div>
+        <div class="planet7">
+            <h3>URANO</h3>
+            <span style="display: block; text-align: center; color: white; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;font-size: 16px;">g = 8.69</span>
+            <img src="https://s2.static.brasilescola.uol.com.br/be/2021/04/planeta-urano.jpg" />
+            <p style="display: block; text-align: center; color: white; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;font-size: 16px;">Seu peso é de: </p>
+            <input type="text" id="6" class="inputPlaneta" />
+        </div>
+        <div class="planet8">
+            <h3>NETUNO</h3>
+            <span style="display: block; text-align: center; color: white; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;font-size: 16px;">g = 11.15</span>
+            <img src="/css Planetas/netuno.jpg" />
+            <p style="display: block; text-align: center; color: white; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;font-size: 16px;">Seu peso é de: </p>
+            <input type="text" id="7" class="inputPlaneta" />
+        </div>
+        <div class="planet9">
+            <h3>PLUTAO</h3>
+            <span style="display: block; text-align: center; color: white; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;font-size: 16px;">g = 0.62</span>
+            <img src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/imagem-plutao-divulgada-pela-nasa-obtida-pela-sonda-new-horizons-em-julho-2015-55c4f673b28c2.jpg" />
+            <p style="display: block; text-align: center; color: white; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;font-size: 16px;">Seu peso é de: </p>
+            <input type="text" id="8" class="inputPlaneta" />
+        </div>
+    </div>
+    <button id="reset" onclick="resetar()" style="display: block; right: 0;">Resetar</button>  
+    <button id="back_Top" style="position: relative; left: 90%;">Voltar ao topo</button>
+
+    <script src="planeta.js"></script>
+</body>
+</html>
